@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV - Phan Kiều Ngọc Anh</title>
+<style>
+  /* ===== Thiết lập chung ===== */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Comic Sans MS", "Trebuchet MS", Arial, sans-serif;
+    background: #e9e9e9;
+    padding: 20px;
+    color: #333;
+  }
+
+  /* ===== Khung CV: flex chia 2 cột ===== */
+  .cv {
+    display: flex;               /* hai cột nằm ngang */
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,.3);
+  }
+
+  /* ===== Cột trái 40% ===== */
+  .left {
+    width: 40%;
+    background: #3a3a3a;
+    color: #fff;
+    padding: 30px 25px;
+  }
+  .avatar {
+    display: block;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    background: #555;
+    object-fit: cover;
+  }
+  .left h3 {
+    margin: 22px 0 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .left p { font-size: 13px; line-height: 1.6; margin-bottom: 6px; }
+
+  /* Thanh kỹ năng: .bar là nền, .bar span là phần đã đạt */
+  .skill { margin-bottom: 12px; font-size: 14px; }
+  .bar {
+    height: 10px;
+    margin-top: 5px;
+    background: #666;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .bar span {
+    display: block;
+    height: 100%;
+    background: #fff;
+    border-radius: 5px;
+  }
+
+  /* ===== Cột phải 60% ===== */
+  .right {
+    width: 60%;
+    padding: 30px 30px;
+  }
+  .right h1 { font-size: 38px; text-transform: uppercase; color: #222; }
+  .title { margin: 5px 0 25px; font-size: 14px; }
+
+  /* Tiêu đề mục có đường kẻ kéo dài bên phải */
+  .right h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 12px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .right h2::after {         /* tạo đường kẻ */
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: #999;
+  }
+  .item { margin-bottom: 14px; }
+  .item h4 { font-size: 14px; margin-bottom: 4px; }
+  .item p { font-size: 13px; line-height: 1.6; text-align: justify; }
+
+  /* ===== Responsive: màn hình nhỏ thì xếp dọc ===== */
+  @media (max-width: 700px) {
+    .cv { flex-direction: column; }
+    .left, .right { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="cv">
+
+  <!-- ========== CỘT TRÁI (40%) ========== -->
+  <aside class="left">
+    <img class="avatar" src="avatar.jpg" alt="Ảnh đại diện">
+
+    <h3>About me</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est itaque dicta dolor quam aliquam optio illo, quibusdam necessitatibus placeat, odit assumenda dolores voluptatibus vitae.</p>
+
+    <h3>Contact us</h3>
+    <p>Phone: 0844228877</p>
+    <p>Email: nanh0210208@gmail.com</p>
+
+    <h3>Skills</h3>
+    <div class="skill">Photoshop <div class="bar"><span style="width:90%"></span></div></div>
+    <div class="skill">Javascript <div class="bar"><span style="width:70%"></span></div></div>
+    <div class="skill">HTML <div class="bar"><span style="width:80%"></span></div></div>
+    <div class="skill">CSS <div class="bar"><span style="width:60%"></span></div></div>
+
+    <h3>Reference person</h3>
+    <p>Mr. Hien Luong - Company Name<br>Position: ........<br>Contact: ........</p>
+    <p>Mr. Khiet Luong - Company Name<br>Position: ........<br>Contact: ........</p>
+  </aside>
+
+  <!-- ========== CỘT PHẢI (60%) ========== -->
+  <main class="right">
+    <h1>Phan Kiều Ngọc Anh</h1>
+    <p class="title">Title: STUDENT</p>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <h4>2014-2016 Lorem ipsum dolor sit amet consectetur.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa eius explicabo fuga vitael Mollitia impedit inventore facere voluptate quia beatae rem ipsum possimus aliquam, dolor molestiae repellat fugiat quisl.</p>
+      </div>
+      <div class="item">
+        <h4>2014-2016 Lorem ipsum dolor sit amet consectetur.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa eius explicabo fuga vitael Mollitia impedit inventore facere voluptate quia beatae rem ipsum possimus aliquam, dolor molestiae repellat fugiat quisl.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="item">
+        <h4>2014-2016 Lorem ipsum dolor sit amet consectetur.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa eius explicabo fuga vitael Mollitia impedit inventore facere voluptate quia beatae rem ipsum possimus aliquam, dolor molestiae repellat fugiat quisl.</p>
+      </div>
+      <div class="item">
+        <h4>2014-2016 Lorem ipsum dolor sit amet consectetur.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa eius explicabo fuga vitael Mollitia impedit inventore facere voluptate quia beatae rem ipsum possimus aliquam, dolor molestiae repellat fugiat quisl.</p>
+      </div>
+      <div class="item">
+        <h4>2013-2014 Lorem ipsum dolor sit amet consectetur.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa eius explicabo fuga vitael Mollitia impedit inventore facere voluptate quia beatae rem ipsum possimus aliquam, dolor molestiae repellat fugiat quisl.</p>
+      </div>
+    </section>
+  </main>
+
+</div>
+
+</body>
+</html>

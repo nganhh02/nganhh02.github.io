@@ -1,0 +1,136 @@
+#shark{
+    left:100px; top:400px;
+    position:absolute;
+    animation-name:Shark;
+    animation-duration:10s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+}
+
+@keyframes Shark{
+    0% { left: 100px; top:150px; }
+    20%{ left:200px; top:250px; }
+    40%{ left:300px; top:350px; }
+    60%{left:400px; top:450px;}
+    80%{ left:600px; top:550px;}
+    100%{ left:600px; top:650px; transform:scaleX(-1);}
+}
+
+#diver1{
+    left:100px; top:400px;
+    position:absolute;
+    animation-name:diver1;
+    animation-duration:10s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+}
+
+@keyframes diver1{
+    0% { left: 100px; top:400px; }
+    20%{ left:300px; top:400px; }
+    40%{ left:500px; top:300px; }
+    50%{ left:600px; top:200px; }
+    60%{left:600px; top:100px;}
+    80%{ left:500px; top:200px;}
+    100%{ left:100px; top:400px; transform:scaleX(-1);}
+}
+
+#diver2{
+    left:100px; top:400px;
+    position:absolute;
+    animation-name:diver2;
+    animation-duration:10s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+}
+
+@keyframes diver2{
+    0% { left: 400px; top:300px; }
+    20%{ left:500px; top:400px; }
+    40%{ left:600px; top:500px; }
+    60%{left:700px; top:600px;}
+    80%{ left:800px; top:7000px;}
+    100%{ left:900px; top:800px; transform:scaleX(-1);}
+}
+
+#diver3{
+    left:100px; top:400px;
+    position:absolute;
+    animation-name:diver3;
+    animation-duration:10s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+}
+
+@keyframes diver3{
+    0% { left:1000px; top:150px; }
+    20%{ left:1100px; top:250px; }
+    40%{ left:900px; top:350px; }
+    60%{left:800px; top:450px;}
+    80%{ left:700px; top:550px;}
+    100%{ left:600px; top:650px; transform:scaleX(-1);}
+}
+
+#faintSchool{
+    left:100px; top:400px;
+    position:absolute;
+    animation-name:faintSchool;
+    animation-duration:10s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+}
+
+@keyframes faintSchool{
+    0% { left:550px; top:250px; }
+    20%{ left:650px; top:350px; }
+    40%{ left:750px; top:450px; }
+    60%{left:850px; top:550px;}
+    80%{ left:950px; top:650px;}
+    100%{ left:1050px; top:750px; transform:scaleX(-1);}
+}
+
+#goldFishSchool{
+    left:100px; top:400px;
+    position:absolute;
+    animation-name:goldFishSchool;
+    animation-duration:10s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+}
+
+@keyframes goldFishSchool{
+    0% { left:400px; top:250px; }
+    20%{ left:500px; top:350px; }
+    40%{ left:600px; top:450px; }
+    60%{left:700px; top:550px;}
+    80%{ left:800px; top:650px;}
+    100%{ left:900px; top:750px; transform:scaleX(-1);}
+}
+
+#turtle{
+    left:100px; top:400px;
+    position:absolute;
+    animation-name:turtle;
+    animation-duration:10s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+}
+
+@keyframes turtle{
+    0% { left:800px; top:250px; }
+    20%{ left:900px; top:350px; }
+    40%{ left:1000px; top:450px; }
+    60%{left:110px; top:550px;}
+    80%{ left:1200px; top:650px;}
+    100%{ left:1300px; top:750px; transform:scaleX(-1);}
+}
+
+
+
